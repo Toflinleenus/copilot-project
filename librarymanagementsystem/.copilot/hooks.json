@@ -1,0 +1,19 @@
+{
+  "onGenerate": [
+    {
+      "run": "ensure layered architecture (controller -> service -> repository)"
+    },
+    {
+      "run": "ensure constructor injection only"
+    },
+    {
+      "run": "ensure no lombok is used"
+    }
+  ],
+  "onFileSave": [
+    {
+      "match": "*.java",
+      "run": "ensure proper formatting and imports"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.copilot-labs",
+    "redhat.java",
+    "vscode.java-test",
+    "vscode.java-pack",
+    "ms-vscode.vscode-node-azure-pack"
+  ]
+}

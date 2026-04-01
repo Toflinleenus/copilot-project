@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .endpoints {
+            margin-top: 30px;
+        }
+        .endpoint {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+            display: inline-block;
+            width: 80px;
+        }
+        .url {
+            font-family: monospace;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Library Management System</h1>
+        <p style="text-align: center; color: #666;">Welcome to the Library Management System API</p>
+        
+        <div class="endpoints">
+            <h2>Available API Endpoints:</h2>
+            
+            <h3>Books Management</h3>
+            <div class="endpoint">
+                <div><span class="method">GET</span> <span class="url">/books</span> - Get all books</div>
+            </div>
+            <div class="endpoint">
+                <div><span class="method">POST</span> <span class="url">/books</span> - Add a new book</div>
+            </div>
+            <div class="endpoint">
+                <div><span class="method">PUT</span> <span class="url">/books/{id}</span> - Update a book</div>
+            </div>
+            <div class="endpoint">
+                <div><span class="method">DELETE</span> <span class="url">/books/{id}</span> - Delete a book</div>
+            </div>
+            
+            <h3>Members Management</h3>
+            <div class="endpoint">
+                <div><span class="method">GET</span> <span class="url">/members</span> - Get all members</div>
+            </div>
+            <div class="endpoint">
+                <div><span class="method">POST</span> <span class="url">/members</span> - Register a new member</div>
+            </div>
+            
+            <h3>Issue & Return Books</h3>
+            <div class="endpoint">
+                <div><span class="method">POST</span> <span class="url">/issue</span> - Issue a book to a member</div>
+            </div>
+            <div class="endpoint">
+                <div><span class="method">PUT</span> <span class="url">/return/{id}</span> - Return an issued book</div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 14px;">
+            <p>🔧 Server Status: <span style="color: #28a745;">Running</span></p>
+            <p>📍 Base URL: <span class="url">http://localhost:8084</span></p>
+        </div>
+    </div>
+</body>
+</html>
